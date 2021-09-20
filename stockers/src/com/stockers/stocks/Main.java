@@ -32,25 +32,25 @@ public class Main {
 				stock.ascendingOrder(stock.shareprice, 0, stock.shareprice.length - 1);
 				stock.printValues();
 			}
-				break;
+			break;
 			case 2: {
 				System.out.println("Stock prices in descending order are : ");
 				stock.ascendingOrder(stock.shareprice, 0, stock.shareprice.length - 1);
 				stock.descendingOrder();
 			}
-				break;
+			break;
 			case 3: {
 				System.out.println("Total no of companies whose stock price rose today : " + stock.bullish);
 			}
-				break;
+			break;
 			case 4: {
 				System.out.println("Total no of companies whose stock price declined today : " + stock.bearish);
 			}
-				break;
+			break;
 			case 5: {
 				stock.searchValue();
 			}
-				break;
+			break;
 			default:
 				System.out.println("Invalid choice. Enter a valid choice.\n");
 			}
