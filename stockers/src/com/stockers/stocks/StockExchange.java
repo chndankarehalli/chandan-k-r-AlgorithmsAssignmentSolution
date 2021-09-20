@@ -7,7 +7,7 @@ class StockExchange {
 	public int noOfCompanies;
 	public double[] shareprice;
 	boolean priceRise;
-	int bullish = 0, bearish = 0, c = 0;
+	int bullish = 0, bearish = 0;
 
 	Scanner sc = new Scanner(System.in);
 
@@ -20,8 +20,7 @@ class StockExchange {
 
 	public void insertValues() {
 		for (int i = 0; i < noOfCompanies; i++) {
-			c = i + 1;
-			System.out.print("Enter current stock price of the company " + c + ": ");
+			System.out.print("Enter current stock price of the company " + (i + 1) + ": ");
 			shareprice[i] = sc.nextDouble();
 			System.out.println("Whether company's stock price rose today compare to yesterday?");
 			priceRise = sc.nextBoolean();
